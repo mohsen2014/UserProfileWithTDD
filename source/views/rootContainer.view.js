@@ -4,11 +4,14 @@ import profileDetailContainer from './profileDetailContainer.view';
 
 let rootContainer = mn.View.extend({
 	template: `
-	<div>
-		<div id="profileRegion"></div>
-		<div id="profileDetailRegion"></div>
+	<div class='row'>
+		<div id="profileRegion" class='col-md-3'></div>
+		<div id="profileDetailRegion" class="col-md-9"></div>
 	</div>
 	`,
+	attributes: {
+		class: 'row'
+	},
 	regions: {
 		profileRegion: '#profileRegion',
 		profileDetailRegion: '#profileDetailRegion '
